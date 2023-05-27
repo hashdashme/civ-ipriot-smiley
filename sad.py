@@ -3,7 +3,7 @@ import time
 
 class Sad(Smiley):
     def __init__(self):
-        super().__init__()
+        super().__init__(complextion=self.BLUE)
 
         self.draw_mouth()
         self.draw_eyes()
