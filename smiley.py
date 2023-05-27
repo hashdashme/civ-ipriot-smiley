@@ -8,9 +8,10 @@ class Smiley:
     YELLOW = (255, 255, 0)
     BLANK = (0, 0, 0)
 
-    def __init__(self):
+    def __init__(self, complextion = YELLOW):
         # We have encapsulated the SenseHat object
         self.sense_hat = SenseHat()
+        self.my_complextion = complextion
 
         Y = self.complextion()
         O = self.BLANK
@@ -26,7 +27,7 @@ class Smiley:
         ]
     
     def complextion(self):
-        return self.YELLOW
+        return self.my_complextion
 
     def dim_display(self, dimmed=True):
         """
